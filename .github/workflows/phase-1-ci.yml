@@ -72,11 +72,11 @@ jobs:
       
       - name: Archive build artifacts
         if: always()
-        uses: actions/upload-artifact@v4@v4
-        with:
+      uses: actions/upload-artifact@v4
+              with:
           name: nextjs-build
           path: .next/
-          retention-days: 5
+          retention-days: 7
 
               - name: Generate summary
       if: always()
