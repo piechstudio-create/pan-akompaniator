@@ -76,11 +76,11 @@ jobs:
         with:
           name: nextjs-build
           path: .next/
-          retention-days
+          retention-days: 5
       
       - name: Generate summary
         if: always()
-        run: |
+        run: |: 5
           echo "# PHASE 1 Validation Results" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "✓ .env.example validated" >> $GITHUB_STEP_SUMMARY
