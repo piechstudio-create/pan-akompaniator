@@ -13,8 +13,7 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
-      - run: npm ci
-      - run: npm run build
+      - run: npm install      - run: npm run build
         env:
           NEXT_PUBLIC_WP_API_URL: https://panakompaniator.pl
           NEXT_PUBLIC_WP_API_ENDPOINT: https://panakompaniator.pl/wp-json
