@@ -21,27 +21,27 @@ jobs:
     
         steps:
         - name: Checkout code
-        uses: actions/checkout@v3
+          uses: actions/checkout@v3
       
-      - name: Setup Node.js 18
-        uses: actions/setup-node@v3
+        - name: Setup Node.js 18
+            uses: actions/setup-node@v3
         with:
           node-version: '18.17.0'
-          cache: 'npm'
+            cache: 'npm'
       
       - name: Install dependencies
         run: npm ci
       
       - name: Validate .env.example
-        run: |
+          run: |
           echo "Checking .env.example format..."
           if [ ! -f .env.example ]; then
             echo "ERROR: .env.example not found"
             exit 1
           fi
           
-          # Check for Phase 1 required variables
-          required_vars=("NEXT_PUBLIC_WP_API_URL" "NEXT_PUBLIC_WOO_API_ENDPOINT" "NEXT_AUTH_SECRET" "JWT_EXPIRATION")
+            # Check for Phase 1 required variables
+            required_vars=("NEXT_PUBLIC_WP_API_URL" "NEXT_PUBLIC_WOO_API_ENDPOINT" "NEXT_AUTH_SECRET" "JWT_EXPIRATION")
           for var in "${required_vars[@]}"; do
             if ! grep -q "$var" .env.example; then
               echo "ERROR: $var not found in .env.example"
@@ -59,18 +59,18 @@ jobs:
           NEXT_PUBLIC_APP_NAME: Pan Akompaniator
           NEXT_PUBLIC_APP_URL: http://localhost:3000
           NEXT_PUBLIC_WP_API_URL: https://panakompaniator.pl
-          NEXT_PUBLIC_WP_API_ENDPOINT: https://panakompaniator.pl/wp-json
+            NEXT_PUBLIC_WP_API_ENDPOINT: https://panakompaniator.pl/wp-json
           NEXT_PUBLIC_WOO_API_ENDPOINT: https://panakompaniator.pl/wp-json/wc/v3
           NEXT_AUTH_SECRET: ${{ secrets.NEXT_AUTH_SECRET }}
           NODE_ENV: production
       
-      - name: Test API Connectivity
+        - name: Test API Connectivity
         run: |
           echo "Testing WordPress API endpoint..."
           # This would test connectivity to actual WordPress in Phase 1
           curl -I https://panakompaniator.pl/wp-json/ || echo "Note: API test skipped (requires VPN/network access)"
       
-      - name: Archive build artifacts
+        - name: Archive build artifacts
         if: always()
       uses: actions/upload-artifact@v4
               with:
@@ -78,7 +78,7 @@ jobs:
           path: .next/
           retention-days: 7
 
-              - name: Generate summary
+                - name: Generate summary
       if: always()
       run: |
         echo "PHASE 1 Validation Results" >> $GITHUB_STEP_SUMMARY
