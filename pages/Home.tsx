@@ -70,7 +70,7 @@ export default function Home() {
               </div>
               <div className="bg-gradient-to-br from-amber-500 to-amber-600 text-white p-6 rounded-lg text-center">
                 <h3 className="text-2xl font-bold mb-2">Podkłady</h3>
-                <p className="text-sm text-amber-100">Ćw cz ułami
+                <p className="text-sm text-amber-100">Cwiczenia z akompaniamentem</p>
               </div>
               <div className="bg-gradient-to-br from-slate-800 to-slate-900 text-white p-6 rounded-lg text-center">
                 <h3 className="text-2xl font-bold mb-2">Pakiety</h3>
