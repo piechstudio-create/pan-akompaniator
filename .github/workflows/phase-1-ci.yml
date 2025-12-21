@@ -19,7 +19,7 @@ jobs:
     name: Phase 1 - Setup Validation
     runs-on: ubuntu-latest
     
-      steps:
+        steps:
       - name: Checkout code
         uses: actions/checkout@v3
       
