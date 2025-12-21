@@ -38,6 +38,89 @@ export default function Home() {
               Przesłuchaj Podkłady
             </Link>
           </div>
+          
+        {/* Dla kogo */}
+        <section className="py-16 bg-slate-50">
+          <div className="max-w-6xl mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center mb-12 text-slate-900">Dla kogo</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-white p-8 rounded-lg shadow-lg">
+                <h3 className="text-xl font-bold mb-4">Wokaliści</h3>
+                <p className="text-slate-600">Kursy i podkłady dla rozwijających się wokalistów</p>
+              </div>
+              <div className="bg-white p-8 rounded-lg shadow-lg">
+                <h3 className="text-xl font-bold mb-4">Nauczyciele</h3>
+                <p className="text-slate-600">Materiały do pracy z uczniami w szkołach wokalnych</p>
+              </div>
+              <div className="bg-white p-8 rounded-lg shadow-lg">
+                <h3 className="text-xl font-bold mb-4">Twórcy</h3>
+                <p className="text-slate-600">Muzyka na TikTok, Instagram i YouTube bez karaoke brzmienia</p>
+              </div>
+            </div>
+          </div>
+          
+        {/* Co mozesz kupić */}
+        <section className="py-16">
+          <div className="max-w-6xl mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center mb-12 text-slate-900">Co możesz tutaj kupić</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="bg-gradient-to-br from-slate-800 to-slate-900 text-white p-6 rounded-lg text-center">
+                <h3 className="text-2xl font-bold mb-2">Video Kursy</h3>
+                <p className="text-sm text-slate-300">Naucz się od podstaw</p>
+              </div>
+              <div className="bg-gradient-to-br from-amber-500 to-amber-600 text-white p-6 rounded-lg text-center">
+                <h3 className="text-2xl font-bold mb-2">Podkłady</h3>
+                <p className="text-sm text-amber-100">Ćw cz ułami
+              </div>
+              <div className="bg-gradient-to-br from-slate-800 to-slate-900 text-white p-6 rounded-lg text-center">
+                <h3 className="text-2xl font-bold mb-2">Pakiety</h3>
+                <p className="text-sm text-slate-300">Oszczędzaj więcej</p>
+              </div>
+              <div className="bg-gradient-to-br from-amber-500 to-amber-600 text-white p-6 rounded-lg text-center">
+                <h3 className="text-2xl font-bold mb-2">Inne</h3>
+                <p className="text-sm text-amber-100">Specjalne edycje</p>
+              </div>
+            </div>
+          </div>
+        </section>
+          
+        {/* Jak to działa */}
+        <section className="py-16 bg-slate-50">
+          <div className="max-w-6xl mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center mb-12 text-slate-900">Jak to działa</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="bg-amber-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
+                <h3 className="text-xl font-bold mb-4 text-slate-900">Wybierz produkt</h3>
+                <p className="text-slate-600">Przeglądaj nasz katalog kursów i podkładów</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-amber-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
+                <h3 className="text-xl font-bold mb-4 text-slate-900">Opłać zamówienie</h3>
+                <p className="text-slate-600">Bezpieczna płatność przez Przelewy24</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-amber-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
+                <h3 className="text-xl font-bold mb-4 text-slate-900">Odbierz dostęp</h3>
+                <p className="text-slate-600">Natychmiast zobacz kursy i pobierz pliki</p>
+              </div>
+            </div>
+          </div>
+        </section>
+          
+        {/* Newsletter */}
+        <section className="py-16 bg-slate-800 text-white">
+          <div className="max-w-2xl mx-auto px-4 text-center">
+            <h2 className="text-4xl font-bold mb-4">Bedziesz na bieżąco</h2>
+            <p className="text-slate-300 mb-8">Zapisz się na newsletter i otrzymaj bezpłatną darmową le
+            <form className="flex gap-4 mb-4">
+              <input type="email" placeholder="Twoj email" className="flex-1 px-4 py-3 rounded text-slate-900"/>
+              <button className="bg-amber-500 hover:bg-amber-600 px-8 py-3 rounded font-bold transition-colors">Zapisz się</button>
+            </form>
+            <p className="text-xs text-slate-400">Nie spamujemy - tylko wartościowe treści dotyczące muzyki i akompaniamentu</p>
+          </div>
+        </section>
+        </section>
         </div>
       </section>
     </div>
