@@ -1,5 +1,4 @@
-import Link from 'next/Link';
-
+import Link from 'next/link';
 const Navigation = () => {
   return (
     <nav style={{ marginBottom: '2rem', borderBottom: '2px solid #ddd', padding: '1rem 0' }}>
