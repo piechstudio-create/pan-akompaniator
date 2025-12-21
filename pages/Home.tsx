@@ -112,7 +112,7 @@ export default function Home() {
         <section className="py-16 bg-slate-800 text-white">
           <div className="max-w-2xl mx-auto px-4 text-center">
             <h2 className="text-4xl font-bold mb-4">Bedziesz na bieżąco</h2>
-            <p className="text-slate-300 mb-8">Zapisz się na newsletter i otrzymaj bezpłatną darmową le
+            <p className="text-slate-300 mb-8">Zapisz się na newsletter i otrzymaj bezpłatną darmową lekcje edukacyjne</p>
             <form className="flex gap-4 mb-4">
               <input type="email" placeholder="Twoj email" className="flex-1 px-4 py-3 rounded text-slate-900"/>
               <button className="bg-amber-500 hover:bg-amber-600 px-8 py-3 rounded font-bold transition-colors">Zapisz się</button>
