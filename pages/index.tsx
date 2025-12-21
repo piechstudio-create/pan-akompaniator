@@ -21,3 +21,17 @@ const Home: NextPage = () => {
           </header>
 
                 <Navigation />
+          
+      <section style={{ marginTop: '2rem', padding: '2rem', backgroundColor: '#f5f5f5', borderRadius: '8px' }}>
+        <h2>Witaj!</h2>
+        <p>Ta strona jest w trakcie modernizacji. Wkrótce dostępne będą wszystkie funkcje platformy.</p>
+        <p><strong>Status:</strong> Next.js migration (Opcja 1) - w toku</p>
+      </section>
+
+      </div>
+    </main>
+    </>
+  );
+};
+
+export default Home;
