@@ -77,16 +77,19 @@ jobs:
           name: nextjs-build
           path: .next/
           retention-days: 5
+
+              - name: Generate summary
+      if: always()
+      run: |
+        echo "PHASE 1 Validation Results" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "env.example validated" >> $GITHUB_STEP_SUMMARY
+        echo "Next.js build successful" >> $GITHUB_STEP_SUMMARY
+        echo "TypeScript lint passed" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "Next Steps" >> $GITHUB_STEP_SUMMARY
+        echo "1. Configure GitHub Secrets" >> $GITHUB_STEP_SUMMARY
+        echo "2. Setup WordPress JWT Authentication" >> $GITHUB_STEP_SUMMARY
+        echo "3. Create WooCommerce API keys" >> $GITHUB_STEP_SUMMARY
       
-      - name: Generate summary
-        if: always()
-        run: |:         echo "# PHASE 1 Validation Results" >> $GITHUB_STEP_SUMMARY |
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "✓ .env.example validated" >> $GITHUB_STEP_SUMMARY
-          echo Next.js build successful" >> $GITHUB_STEP_SUMMARY
-          echo"✓ TypeScript lint passed" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Next Steps:**" >> $GITHUB_STEP_SUMMARY
-          echo "1. Configure GitHub Secrets (NEXT_AUTH_SECRET, etc.)" >> $GITHUB_STEP_SUMMARY
-          echo "2. Setup WordPress JWT Authentication" >> $GITHUB_STEP_SUMMARY
-          echo "3. Create WooCommerce API keys" >> $GITHUB_STEP_SUMMARY
+      
