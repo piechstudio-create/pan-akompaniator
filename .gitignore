@@ -22,24 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Next.js
-.next/
-out/
-build/
-.env.local
-.env.*.local
-
-# Production
-out/
-.export/
-
-# Testing
-coverage/
-.nyc_output/
-
-# Misc
-.cache/
-.parcel-cache
-.next
-out
