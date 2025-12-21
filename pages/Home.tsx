@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { Play, BookOpen, Mic, Star, ArrowRight, Heart, Music2, Smartphone } from 'lucide-react';
 import { COURSES, TRACKS } from '../services/mockData';
 
 export const Home = () => {
