@@ -76,7 +76,7 @@ jobs:
         with:
           name: nextjs-build
           path: .next/
-          retention-days: 5
+          retention-days
       
       - name: Generate summary
         if: always()
