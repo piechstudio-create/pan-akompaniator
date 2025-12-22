@@ -37,6 +37,8 @@ const config: Config = {
       },
       animation: {
         'blob': 'blob 7s infinite',
+                    'animation-delay-2000': 'animation-delay: 2s',
+                    'animation-delay-4000': 'animation-delay: 4s',
       },
       keyframes: {
         blob: {
