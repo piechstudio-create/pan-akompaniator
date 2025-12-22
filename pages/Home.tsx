@@ -1,1 +1,1 @@
-export const Home = () => null;
+export default function Home() { return null; }
