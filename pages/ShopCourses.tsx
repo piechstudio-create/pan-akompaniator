@@ -1,1 +1,1 @@
-export const ShopCourses = () => null;
+export default function ShopCourses() { return null; }
