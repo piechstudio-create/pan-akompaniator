@@ -28,3 +28,5 @@
     "prisma": "^5.0.0"
   }
 }
+
+  // Force Tailwind CSS rebuild - ensuring styles are compiled correctly
