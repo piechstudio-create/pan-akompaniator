@@ -1,1 +1,1 @@
-export const StudentDashboard = () => null;
+export default function StudentDashboard() { return null; }
