@@ -1,1 +1,1 @@
-export const ShopTracks = () => null;
+export default function ShopTracks() { return null; }
