@@ -1,1 +1,1 @@
-export const Login = () => null;
+export default function Login() { return null; }
