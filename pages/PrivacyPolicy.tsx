@@ -1,1 +1,1 @@
-export const PrivacyPolicy = () => null;
+export default function PrivacyPolicy() { return null; }
