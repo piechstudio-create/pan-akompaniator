@@ -1,1 +1,1 @@
-export const Cart = () => null;
+export default function Cart() { return null; }
