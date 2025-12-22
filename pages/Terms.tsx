@@ -1,1 +1,1 @@
-export const Terms = () => null;
+export default function Terms() { return null; }
