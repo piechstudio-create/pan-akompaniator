@@ -1,1 +1,1 @@
-export const TrackDetails = () => null;
+export default function TrackDetails() { return null; }
