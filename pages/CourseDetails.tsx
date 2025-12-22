@@ -1,1 +1,1 @@
-export const CourseDetails = () => null;
+export default function CourseDetails() { return null; }
