@@ -1,3 +1,4 @@
+"use client";
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { CartItem, Product, User } from '../types';
 import { MOCK_USER } from '../services/mockData';
@@ -42,7 +43,6 @@ export const ShopProvider = ({ children }: { children?: ReactNode }) => {
   const cartTotal = cart.reduce((acc, item) => acc + item.product.price * item.quantity, 0);
 
   const login = () => {
-    // Simulate API call
     setUser(MOCK_USER);
   };
 
