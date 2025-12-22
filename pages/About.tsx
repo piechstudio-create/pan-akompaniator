@@ -1,1 +1,1 @@
-export const About = () => null;
+export default function About() { return null; }
